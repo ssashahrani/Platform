@@ -1,0 +1,65 @@
+{
+  "settings": {
+    "name": "Simple 3-Bus Radial FBS Test",
+    "base_power_mva": 100.0,
+    "frequency_hz": 60.0,
+    "default_base_current_a": 1.0,
+    "default_ampacity_pu": 10.0,
+    "notes": ""
+  },
+  "buses": [
+    {
+      "bus_id": "1",
+      "bus_type": "Slack",
+      "voltage_pu": 1.0,
+      "angle_deg": 0.0,
+      "p_load_pu": 0.0,
+      "q_load_pu": 0.0,
+      "p_gen_pu": 0.0,
+      "base_kv": 230.0
+    },
+    {
+      "bus_id": "2",
+      "bus_type": "PQ",
+      "voltage_pu": 1.0,
+      "angle_deg": 0.0,
+      "p_load_pu": 0.5,
+      "q_load_pu": -0.2,
+      "p_gen_pu": 0.0,
+      "base_kv": 230.0
+    },
+    {
+      "bus_id": "3",
+      "bus_type": "PQ",
+      "voltage_pu": 1.0,
+      "angle_deg": 0.0,
+      "p_load_pu": 0.4,
+      "q_load_pu": -0.15,
+      "p_gen_pu": 0.0,
+      "base_kv": 230.0
+    }
+  ],
+  "branches": [
+    {
+      "name": "L12",
+      "from_bus": "1",
+      "to_bus": "2",
+      "r_pu": 0.01,
+      "x_pu": 0.05,
+      "b_pu": 0.0,
+      "ampacity_pu": 10.0,
+      "element_type": "Line"
+    },
+    {
+      "name": "L23",
+      "from_bus": "2",
+      "to_bus": "3",
+      "r_pu": 0.015,
+      "x_pu": 0.045,
+      "b_pu": 0.0,
+      "ampacity_pu": 10.0,
+      "element_type": "Line"
+    }
+  ],
+  "sequence_sources": []
+}

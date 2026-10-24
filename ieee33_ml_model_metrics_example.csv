@@ -1,0 +1,13 @@
+Target,Model,Metric,Value,Unit,Status
+Minimum voltage,GradientBoostingRegressor,MAE,0.0015882083913669187,pu,OK
+Minimum voltage,GradientBoostingRegressor,R2,0.9939461835790493,,Info
+Total real loss,GradientBoostingRegressor,MAE,0.004771803295255856,MW,OK
+Total real loss,GradientBoostingRegressor,R2,0.9963822549151085,,Info
+Total reactive loss,GradientBoostingRegressor,MAE,0.0034649511929860993,MVAr,OK
+Total reactive loss,GradientBoostingRegressor,R2,0.9959819922551841,,Info
+Voltage violation,GradientBoostingClassifier,Accuracy,1.0,fraction,OK
+Voltage violation,GradientBoostingClassifier,Classes,"0, 1",,Info
+Overload risk,ConstantClassifier,Accuracy,1.0,fraction,OK
+Overload risk,ConstantClassifier,Classes,0,,Info
+Weakest-voltage bus,GradientBoostingClassifier,Accuracy,0.8666666666666667,fraction,Warning
+Weakest-voltage bus,GradientBoostingClassifier,Classes,"18, 33",,Info

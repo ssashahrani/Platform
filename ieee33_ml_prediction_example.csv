@@ -1,0 +1,9 @@
+Item,Value,Unit,Status
+Predicted minimum voltage,0.9128361479055611,pu,Warning
+Predicted weakest-voltage bus,18,bus,Info
+Predicted total real loss,0.2009312635195872,MW,Info
+Predicted total reactive loss,0.13319824185806986,MVAr,Info
+Predicted voltage violation,Yes,,Warning
+Predicted overload risk,No,,OK
+Voltage-violation probability,0.9999540110145164,fraction,Warning
+Overload probability,0.0,fraction,OK

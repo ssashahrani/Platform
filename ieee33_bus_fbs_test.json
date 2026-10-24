@@ -1,0 +1,665 @@
+{
+  "settings": {
+    "name": "IEEE 33-bus radial distribution feeder - Baran-Wu case33bw",
+    "base_power_mva": 10.0,
+    "frequency_hz": 60.0,
+    "default_base_current_a": 1.0,
+    "default_ampacity_pu": 10.0,
+    "notes": "Loads and branch data based on MATPOWER case33bw / Baran-Wu. R/X converted from ohms to pu using 12.66 kV and 10 MVA. q_load_pu is negative for inductive load to match the current simulator sign convention. Tie switches are excluded; only the 32 normally closed radial branches are included."
+  },
+  "buses": [
+    {
+      "bus_id": "1",
+      "bus_type": "Slack",
+      "voltage_pu": 1.0,
+      "angle_deg": 0.0,
+      "p_load_pu": 0.0,
+      "q_load_pu": 0.0,
+      "p_gen_pu": 0.0,
+      "base_kv": 12.66
+    },
+    {
+      "bus_id": "2",
+      "bus_type": "PQ",
+      "voltage_pu": 1.0,
+      "angle_deg": 0.0,
+      "p_load_pu": 0.01,
+      "q_load_pu": -0.006,
+      "p_gen_pu": 0.0,
+      "base_kv": 12.66
+    },
+    {
+      "bus_id": "3",
+      "bus_type": "PQ",
+      "voltage_pu": 1.0,
+      "angle_deg": 0.0,
+      "p_load_pu": 0.009,
+      "q_load_pu": -0.004,
+      "p_gen_pu": 0.0,
+      "base_kv": 12.66
+    },
+    {
+      "bus_id": "4",
+      "bus_type": "PQ",
+      "voltage_pu": 1.0,
+      "angle_deg": 0.0,
+      "p_load_pu": 0.012,
+      "q_load_pu": -0.008,
+      "p_gen_pu": 0.0,
+      "base_kv": 12.66
+    },
+    {
+      "bus_id": "5",
+      "bus_type": "PQ",
+      "voltage_pu": 1.0,
+      "angle_deg": 0.0,
+      "p_load_pu": 0.006,
+      "q_load_pu": -0.003,
+      "p_gen_pu": 0.0,
+      "base_kv": 12.66
+    },
+    {
+      "bus_id": "6",
+      "bus_type": "PQ",
+      "voltage_pu": 1.0,
+      "angle_deg": 0.0,
+      "p_load_pu": 0.006,
+      "q_load_pu": -0.002,
+      "p_gen_pu": 0.0,
+      "base_kv": 12.66
+    },
+    {
+      "bus_id": "7",
+      "bus_type": "PQ",
+      "voltage_pu": 1.0,
+      "angle_deg": 0.0,
+      "p_load_pu": 0.02,
+      "q_load_pu": -0.01,
+      "p_gen_pu": 0.0,
+      "base_kv": 12.66
+    },
+    {
+      "bus_id": "8",
+      "bus_type": "PQ",
+      "voltage_pu": 1.0,
+      "angle_deg": 0.0,
+      "p_load_pu": 0.02,
+      "q_load_pu": -0.01,
+      "p_gen_pu": 0.0,
+      "base_kv": 12.66
+    },
+    {
+      "bus_id": "9",
+      "bus_type": "PQ",
+      "voltage_pu": 1.0,
+      "angle_deg": 0.0,
+      "p_load_pu": 0.006,
+      "q_load_pu": -0.002,
+      "p_gen_pu": 0.0,
+      "base_kv": 12.66
+    },
+    {
+      "bus_id": "10",
+      "bus_type": "PQ",
+      "voltage_pu": 1.0,
+      "angle_deg": 0.0,
+      "p_load_pu": 0.006,
+      "q_load_pu": -0.002,
+      "p_gen_pu": 0.0,
+      "base_kv": 12.66
+    },
+    {
+      "bus_id": "11",
+      "bus_type": "PQ",
+      "voltage_pu": 1.0,
+      "angle_deg": 0.0,
+      "p_load_pu": 0.0045,
+      "q_load_pu": -0.003,
+      "p_gen_pu": 0.0,
+      "base_kv": 12.66
+    },
+    {
+      "bus_id": "12",
+      "bus_type": "PQ",
+      "voltage_pu": 1.0,
+      "angle_deg": 0.0,
+      "p_load_pu": 0.006,
+      "q_load_pu": -0.0035,
+      "p_gen_pu": 0.0,
+      "base_kv": 12.66
+    },
+    {
+      "bus_id": "13",
+      "bus_type": "PQ",
+      "voltage_pu": 1.0,
+      "angle_deg": 0.0,
+      "p_load_pu": 0.006,
+      "q_load_pu": -0.0035,
+      "p_gen_pu": 0.0,
+      "base_kv": 12.66
+    },
+    {
+      "bus_id": "14",
+      "bus_type": "PQ",
+      "voltage_pu": 1.0,
+      "angle_deg": 0.0,
+      "p_load_pu": 0.012,
+      "q_load_pu": -0.008,
+      "p_gen_pu": 0.0,
+      "base_kv": 12.66
+    },
+    {
+      "bus_id": "15",
+      "bus_type": "PQ",
+      "voltage_pu": 1.0,
+      "angle_deg": 0.0,
+      "p_load_pu": 0.006,
+      "q_load_pu": -0.001,
+      "p_gen_pu": 0.0,
+      "base_kv": 12.66
+    },
+    {
+      "bus_id": "16",
+      "bus_type": "PQ",
+      "voltage_pu": 1.0,
+      "angle_deg": 0.0,
+      "p_load_pu": 0.006,
+      "q_load_pu": -0.002,
+      "p_gen_pu": 0.0,
+      "base_kv": 12.66
+    },
+    {
+      "bus_id": "17",
+      "bus_type": "PQ",
+      "voltage_pu": 1.0,
+      "angle_deg": 0.0,
+      "p_load_pu": 0.006,
+      "q_load_pu": -0.002,
+      "p_gen_pu": 0.0,
+      "base_kv": 12.66
+    },
+    {
+      "bus_id": "18",
+      "bus_type": "PQ",
+      "voltage_pu": 1.0,
+      "angle_deg": 0.0,
+      "p_load_pu": 0.009,
+      "q_load_pu": -0.004,
+      "p_gen_pu": 0.0,
+      "base_kv": 12.66
+    },
+    {
+      "bus_id": "19",
+      "bus_type": "PQ",
+      "voltage_pu": 1.0,
+      "angle_deg": 0.0,
+      "p_load_pu": 0.009,
+      "q_load_pu": -0.004,
+      "p_gen_pu": 0.0,
+      "base_kv": 12.66
+    },
+    {
+      "bus_id": "20",
+      "bus_type": "PQ",
+      "voltage_pu": 1.0,
+      "angle_deg": 0.0,
+      "p_load_pu": 0.009,
+      "q_load_pu": -0.004,
+      "p_gen_pu": 0.0,
+      "base_kv": 12.66
+    },
+    {
+      "bus_id": "21",
+      "bus_type": "PQ",
+      "voltage_pu": 1.0,
+      "angle_deg": 0.0,
+      "p_load_pu": 0.009,
+      "q_load_pu": -0.004,
+      "p_gen_pu": 0.0,
+      "base_kv": 12.66
+    },
+    {
+      "bus_id": "22",
+      "bus_type": "PQ",
+      "voltage_pu": 1.0,
+      "angle_deg": 0.0,
+      "p_load_pu": 0.009,
+      "q_load_pu": -0.004,
+      "p_gen_pu": 0.0,
+      "base_kv": 12.66
+    },
+    {
+      "bus_id": "23",
+      "bus_type": "PQ",
+      "voltage_pu": 1.0,
+      "angle_deg": 0.0,
+      "p_load_pu": 0.009,
+      "q_load_pu": -0.005,
+      "p_gen_pu": 0.0,
+      "base_kv": 12.66
+    },
+    {
+      "bus_id": "24",
+      "bus_type": "PQ",
+      "voltage_pu": 1.0,
+      "angle_deg": 0.0,
+      "p_load_pu": 0.042,
+      "q_load_pu": -0.02,
+      "p_gen_pu": 0.0,
+      "base_kv": 12.66
+    },
+    {
+      "bus_id": "25",
+      "bus_type": "PQ",
+      "voltage_pu": 1.0,
+      "angle_deg": 0.0,
+      "p_load_pu": 0.042,
+      "q_load_pu": -0.02,
+      "p_gen_pu": 0.0,
+      "base_kv": 12.66
+    },
+    {
+      "bus_id": "26",
+      "bus_type": "PQ",
+      "voltage_pu": 1.0,
+      "angle_deg": 0.0,
+      "p_load_pu": 0.006,
+      "q_load_pu": -0.0025,
+      "p_gen_pu": 0.0,
+      "base_kv": 12.66
+    },
+    {
+      "bus_id": "27",
+      "bus_type": "PQ",
+      "voltage_pu": 1.0,
+      "angle_deg": 0.0,
+      "p_load_pu": 0.006,
+      "q_load_pu": -0.0025,
+      "p_gen_pu": 0.0,
+      "base_kv": 12.66
+    },
+    {
+      "bus_id": "28",
+      "bus_type": "PQ",
+      "voltage_pu": 1.0,
+      "angle_deg": 0.0,
+      "p_load_pu": 0.006,
+      "q_load_pu": -0.002,
+      "p_gen_pu": 0.0,
+      "base_kv": 12.66
+    },
+    {
+      "bus_id": "29",
+      "bus_type": "PQ",
+      "voltage_pu": 1.0,
+      "angle_deg": 0.0,
+      "p_load_pu": 0.012,
+      "q_load_pu": -0.007,
+      "p_gen_pu": 0.0,
+      "base_kv": 12.66
+    },
+    {
+      "bus_id": "30",
+      "bus_type": "PQ",
+      "voltage_pu": 1.0,
+      "angle_deg": 0.0,
+      "p_load_pu": 0.02,
+      "q_load_pu": -0.06,
+      "p_gen_pu": 0.0,
+      "base_kv": 12.66
+    },
+    {
+      "bus_id": "31",
+      "bus_type": "PQ",
+      "voltage_pu": 1.0,
+      "angle_deg": 0.0,
+      "p_load_pu": 0.015,
+      "q_load_pu": -0.007,
+      "p_gen_pu": 0.0,
+      "base_kv": 12.66
+    },
+    {
+      "bus_id": "32",
+      "bus_type": "PQ",
+      "voltage_pu": 1.0,
+      "angle_deg": 0.0,
+      "p_load_pu": 0.021,
+      "q_load_pu": -0.01,
+      "p_gen_pu": 0.0,
+      "base_kv": 12.66
+    },
+    {
+      "bus_id": "33",
+      "bus_type": "PQ",
+      "voltage_pu": 1.0,
+      "angle_deg": 0.0,
+      "p_load_pu": 0.006,
+      "q_load_pu": -0.004,
+      "p_gen_pu": 0.0,
+      "base_kv": 12.66
+    }
+  ],
+  "branches": [
+    {
+      "name": "L1-2",
+      "from_bus": "1",
+      "to_bus": "2",
+      "r_pu": 0.005752591161723931,
+      "x_pu": 0.002932448856844086,
+      "b_pu": 0.0,
+      "ampacity_pu": 10.0,
+      "element_type": "Line"
+    },
+    {
+      "name": "L2-3",
+      "from_bus": "2",
+      "to_bus": "3",
+      "r_pu": 0.03075951673242839,
+      "x_pu": 0.0156667639990117,
+      "b_pu": 0.0,
+      "ampacity_pu": 10.0,
+      "element_type": "Line"
+    },
+    {
+      "name": "L3-4",
+      "from_bus": "3",
+      "to_bus": "4",
+      "r_pu": 0.022835665566062455,
+      "x_pu": 0.011629967381185907,
+      "b_pu": 0.0,
+      "ampacity_pu": 10.0,
+      "element_type": "Line"
+    },
+    {
+      "name": "L4-5",
+      "from_bus": "4",
+      "to_bus": "5",
+      "r_pu": 0.023777792751984703,
+      "x_pu": 0.012110389853477383,
+      "b_pu": 0.0,
+      "ampacity_pu": 10.0,
+      "element_type": "Line"
+    },
+    {
+      "name": "L5-6",
+      "from_bus": "5",
+      "to_bus": "6",
+      "r_pu": 0.05109948114372992,
+      "x_pu": 0.04411151791039933,
+      "b_pu": 0.0,
+      "ampacity_pu": 10.0,
+      "element_type": "Line"
+    },
+    {
+      "name": "L6-7",
+      "from_bus": "6",
+      "to_bus": "7",
+      "r_pu": 0.011679881404281126,
+      "x_pu": 0.0386084968641515,
+      "b_pu": 0.0,
+      "ampacity_pu": 10.0,
+      "element_type": "Line"
+    },
+    {
+      "name": "L7-8",
+      "from_bus": "7",
+      "to_bus": "8",
+      "r_pu": 0.044386045037423036,
+      "x_pu": 0.014668483537107332,
+      "b_pu": 0.0,
+      "ampacity_pu": 10.0,
+      "element_type": "Line"
+    },
+    {
+      "name": "L8-9",
+      "from_bus": "8",
+      "to_bus": "9",
+      "r_pu": 0.0642643047350938,
+      "x_pu": 0.046170471363077094,
+      "b_pu": 0.0,
+      "ampacity_pu": 10.0,
+      "element_type": "Line"
+    },
+    {
+      "name": "L9-10",
+      "from_bus": "9",
+      "to_bus": "10",
+      "r_pu": 0.06513780013926013,
+      "x_pu": 0.046170471363077094,
+      "b_pu": 0.0,
+      "ampacity_pu": 10.0,
+      "element_type": "Line"
+    },
+    {
+      "name": "L10-11",
+      "from_bus": "10",
+      "to_bus": "11",
+      "r_pu": 0.012266371175649942,
+      "x_pu": 0.004055514376486502,
+      "b_pu": 0.0,
+      "ampacity_pu": 10.0,
+      "element_type": "Line"
+    },
+    {
+      "name": "L11-12",
+      "from_bus": "11",
+      "to_bus": "12",
+      "r_pu": 0.02335976280856225,
+      "x_pu": 0.00772419507398506,
+      "b_pu": 0.0,
+      "ampacity_pu": 10.0,
+      "element_type": "Line"
+    },
+    {
+      "name": "L12-13",
+      "from_bus": "12",
+      "to_bus": "13",
+      "r_pu": 0.09159223237972591,
+      "x_pu": 0.07206337084372169,
+      "b_pu": 0.0,
+      "ampacity_pu": 10.0,
+      "element_type": "Line"
+    },
+    {
+      "name": "L13-14",
+      "from_bus": "13",
+      "to_bus": "14",
+      "r_pu": 0.03379179363546291,
+      "x_pu": 0.04447963383072657,
+      "b_pu": 0.0,
+      "ampacity_pu": 10.0,
+      "element_type": "Line"
+    },
+    {
+      "name": "L14-15",
+      "from_bus": "14",
+      "to_bus": "15",
+      "r_pu": 0.03687398456159265,
+      "x_pu": 0.032818470185106155,
+      "b_pu": 0.0,
+      "ampacity_pu": 10.0,
+      "element_type": "Line"
+    },
+    {
+      "name": "L15-16",
+      "from_bus": "15",
+      "to_bus": "16",
+      "r_pu": 0.046563544294951936,
+      "x_pu": 0.03400392823361759,
+      "b_pu": 0.0,
+      "ampacity_pu": 10.0,
+      "element_type": "Line"
+    },
+    {
+      "name": "L16-17",
+      "from_bus": "16",
+      "to_bus": "17",
+      "r_pu": 0.08042396971217078,
+      "x_pu": 0.10737754218358876,
+      "b_pu": 0.0,
+      "ampacity_pu": 10.0,
+      "element_type": "Line"
+    },
+    {
+      "name": "L17-18",
+      "from_bus": "17",
+      "to_bus": "18",
+      "r_pu": 0.04567133113212491,
+      "x_pu": 0.03581331157081926,
+      "b_pu": 0.0,
+      "ampacity_pu": 10.0,
+      "element_type": "Line"
+    },
+    {
+      "name": "L2-19",
+      "from_bus": "2",
+      "to_bus": "19",
+      "r_pu": 0.01023237473451979,
+      "x_pu": 0.009764430768002116,
+      "b_pu": 0.0,
+      "ampacity_pu": 10.0,
+      "element_type": "Line"
+    },
+    {
+      "name": "L19-20",
+      "from_bus": "19",
+      "to_bus": "20",
+      "r_pu": 0.09385084192478454,
+      "x_pu": 0.08456683362907391,
+      "b_pu": 0.0,
+      "ampacity_pu": 10.0,
+      "element_type": "Line"
+    },
+    {
+      "name": "L20-21",
+      "from_bus": "20",
+      "to_bus": "21",
+      "r_pu": 0.02554974057186496,
+      "x_pu": 0.029848585810940652,
+      "b_pu": 0.0,
+      "ampacity_pu": 10.0,
+      "element_type": "Line"
+    },
+    {
+      "name": "L21-22",
+      "from_bus": "21",
+      "to_bus": "22",
+      "r_pu": 0.04423006371525048,
+      "x_pu": 0.05848051730893536,
+      "b_pu": 0.0,
+      "ampacity_pu": 10.0,
+      "element_type": "Line"
+    },
+    {
+      "name": "L3-23",
+      "from_bus": "3",
+      "to_bus": "23",
+      "r_pu": 0.028151509025703222,
+      "x_pu": 0.019235616650319823,
+      "b_pu": 0.0,
+      "ampacity_pu": 10.0,
+      "element_type": "Line"
+    },
+    {
+      "name": "L23-24",
+      "from_bus": "23",
+      "to_bus": "24",
+      "r_pu": 0.05602849092438275,
+      "x_pu": 0.04424254222102428,
+      "b_pu": 0.0,
+      "ampacity_pu": 10.0,
+      "element_type": "Line"
+    },
+    {
+      "name": "L24-25",
+      "from_bus": "24",
+      "to_bus": "25",
+      "r_pu": 0.0559037058666447,
+      "x_pu": 0.043743401990072095,
+      "b_pu": 0.0,
+      "ampacity_pu": 10.0,
+      "element_type": "Line"
+    },
+    {
+      "name": "L6-26",
+      "from_bus": "6",
+      "to_bus": "26",
+      "r_pu": 0.01266568336041169,
+      "x_pu": 0.00645138748505699,
+      "b_pu": 0.0,
+      "ampacity_pu": 10.0,
+      "element_type": "Line"
+    },
+    {
+      "name": "L26-27",
+      "from_bus": "26",
+      "to_bus": "27",
+      "r_pu": 0.017731956704576366,
+      "x_pu": 0.009028198927347643,
+      "b_pu": 0.0,
+      "ampacity_pu": 10.0,
+      "element_type": "Line"
+    },
+    {
+      "name": "L27-28",
+      "from_bus": "27",
+      "to_bus": "28",
+      "r_pu": 0.06607368807229547,
+      "x_pu": 0.05825590420500687,
+      "b_pu": 0.0,
+      "ampacity_pu": 10.0,
+      "element_type": "Line"
+    },
+    {
+      "name": "L28-29",
+      "from_bus": "28",
+      "to_bus": "29",
+      "r_pu": 0.05017607171646838,
+      "x_pu": 0.04371220572563759,
+      "b_pu": 0.0,
+      "ampacity_pu": 10.0,
+      "element_type": "Line"
+    },
+    {
+      "name": "L29-30",
+      "from_bus": "29",
+      "to_bus": "30",
+      "r_pu": 0.03166420840102922,
+      "x_pu": 0.016128468712642473,
+      "b_pu": 0.0,
+      "ampacity_pu": 10.0,
+      "element_type": "Line"
+    },
+    {
+      "name": "L30-31",
+      "from_bus": "30",
+      "to_bus": "31",
+      "r_pu": 0.06079528012997611,
+      "x_pu": 0.06008400530086925,
+      "b_pu": 0.0,
+      "ampacity_pu": 10.0,
+      "element_type": "Line"
+    },
+    {
+      "name": "L31-32",
+      "from_bus": "31",
+      "to_bus": "32",
+      "r_pu": 0.019372880213831673,
+      "x_pu": 0.02257985619769946,
+      "b_pu": 0.0,
+      "ampacity_pu": 10.0,
+      "element_type": "Line"
+    },
+    {
+      "name": "L32-33",
+      "from_bus": "32",
+      "to_bus": "33",
+      "r_pu": 0.02127585234433688,
+      "x_pu": 0.03308051880635605,
+      "b_pu": 0.0,
+      "ampacity_pu": 10.0,
+      "element_type": "Line"
+    }
+  ],
+  "sequence_sources": []
+}
